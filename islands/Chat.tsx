@@ -77,7 +77,7 @@ export default function Chat() {
         <div class="max-w-4xl mx-auto">
             <div class="flex justify-between items-center mb-4">
                 <ModelSelector value={model} onChange={setModel} />{" "}
-                // Komponen untuk memilih model AI
+                {/* // Komponen untuk memilih model AI */}
                 <button
                     onClick={() => setShowSettings(true)} // Tombol untuk menampilkan modal pengaturan
                     class="px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200"
@@ -91,10 +91,10 @@ export default function Chat() {
                 ))}
                 {loading && <div class="text-gray-500">AI is thinking...</div>}
                 {" "}
-                // Menampilkan pesan loading jika sedang memuat
+                {/* // Menampilkan pesan loading jika sedang memuat */}
             </div>
             <form onSubmit={sendMessage} class="flex gap-4">
-                // Formulir untuk mengirim pesan
+                {/* // Formulir untuk mengirim pesan */}
                 <input
                     type="text"
                     value={input}
@@ -110,7 +110,7 @@ export default function Chat() {
                     Send
                 </button>
             </form>
-            {showSettings && ( // Menampilkan modal pengaturan jika showSettings true
+            {showSettings && ( 
                 <SettingsModal
                     settings={settings}
                     onSave={setSettings}
